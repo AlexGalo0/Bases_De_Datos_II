@@ -1,0 +1,28 @@
+// Idea de utilizarla es hacer una consulta Dentro de un bloque anonimo 
+
+Necesitamos una variable donde almacenar los valores de los campos que estamso obteniendo en la consulta, la cual debe de ser del mismo tamaño que el campo que queremos solicitar.
+
+SELECT ___ INTO VARIABLE_CREADA_PARA_ALMACENAR_ FROM PRODUCTS WHERE ======
+
+
+DESC TABLA //Describe la tabla TABLA con Su nombre, Null o no , y el tipo.
+
+
+Como a veces no se que tipo sera la variable en la cual amlmacenare todos los datos, usare la isntruccion 
+
+nombre_varaible TABLA.CAMPO%TIPE ; 
+
+
+
+==========
+Si quiero iterar una tabla por todos sus valores pero no se cuantos tienen, necesito crear un iterador que tenga esa informacion. Una variable Iterador.
+
+El select count nos ayudara con eso.
+
+SELECT COUNT (NOMBRE_TABLA) INTO ITERADOR FROM PRODUCTS
+
+
+
+
+
+=====QUE HACER SI QUEREMOS QUE NOS RETORNE MAS DE UN CAMPO==========

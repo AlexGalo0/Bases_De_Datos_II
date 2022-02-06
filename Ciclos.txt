@@ -1,0 +1,15 @@
+DECLARE 
+
+
+BEGIN  
+    LOOP
+
+        EXIT WHEN()
+
+
+    END LOOP ; 
+
+END ; 
+
+//Forma de hacer el ciclo form     
+    FOR ITERACION IN 0..5 LOOP 

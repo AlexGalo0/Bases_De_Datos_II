@@ -1,0 +1,10 @@
+Antes:
+Creamos una conexión
+De ahi se abre una ventana, interfaz para escribir comandos SQL.
+
+Crear Usuarios : Restaurar o Crear una BDD.
+=============
+CREATE USER NOMBRE_USUARIO IDENTIFIED BY 123 ; 
+DEFAULT TABLESPACE users  /*Donde se crearan todos los objetos*/
+TEMPORARY TABLESPACE temp  /*Donde se guardaran todos los objetos que se creen por sesión*/
+QUOTA UNLIMITED ON users ; /*Cantidad Ilimitada de Usuarios por crear*/

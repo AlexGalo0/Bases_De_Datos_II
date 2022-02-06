@@ -1,0 +1,14 @@
+DECLARE
+
+
+nombre completo varchar2(100) ="Alex Galo" ;  //Donde van las variables
+
+
+BEGIN
+DBMS.OUTPUT.PUT_LINE("El nombre de la persona es : " ||contatenacion) ;  //Que queremos hacer con esas variables
+ 
+Final
+
+END ;   
+
+SET SERVEROUTPUT ON ;  //Crear servidor para imprimir outputs .

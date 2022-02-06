@@ -1,0 +1,27 @@
+========Estructura del If=============
+IF() THEN
+    ----
+END IF ; 
+
+
+============ELSIF========
+
+IF() THEN
+    ----
+ELSIF ()THEN
+
+ELSE 
+
+END IF ; 
+
+
+=========SWITCH=========
+CASE
+WHEN() THEN
+
+WHEN () THEN
+
+
+ELSE
+
+ELSE CASE ; 

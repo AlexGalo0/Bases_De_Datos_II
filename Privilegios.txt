@@ -1,0 +1,16 @@
+1) Se crea un Rol, el cual contiene varios privilegios.
+2) Asignar ese rol a un usuario.
+
+
+CREATE ROLE ______  ; 
+
+GRANT CREATE SESSION, CREATE ANY TABLE,ETC // Grant para conceder , y de ahi los permisos, crear sesion,tablas,etc.
+
+GRANT ADMINISTRADORES TO BD_BICICLETAS1 ; 
+
+
+SELECT * FROM DBA_SYS_PRIVS WHERE GRANTEE = 'ADMINISTRADORES' ; //Ver los permisos que se le asignaron al adminsitrador
+
+
+============ ELIMINAR PROCEDIMIENTOS===========
+REVOKE CREATE ANY PROCEDURE , ETC FROM ADMINISTRADORES ; 
