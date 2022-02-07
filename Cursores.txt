@@ -1,0 +1,32 @@
+Un cursor es una instruccion que utilizamos cuando queremos recorrer varios registros de una consulta.
+
+Se puede tener uno explicito o uno implicito.
+
+Cursor implicito : Se llama "SQL"
+
+    SQL%ROWCOUNT : Retorna la cantidad de registros que obtiene la consulta
+
+Cursor explicito: 
+    1)CURSOS CNOMBRE_PROD IS SELECT REGISTROS FROM  TABLA_QUE_QUEREMOS_SELECCIONAR
+    2) OPEN  CNOMBRE_PROD ;// Abre el cursos y obtiene todos los registros que retorna la consulta "SELECT REGISTROS"
+    3) Ciclo para recorrer la consulta
+        3.1)Dentro del Ciclo, usamos FETCH para decirle al cursos que se ubique en el sigueinte registro.
+    4) Para salirnos del ciclo, podemos usar orta de las variables que nos da un cursor, la cual es %NOTFOUND
+    Retorna un booleano.
+    5) Cerrar Cursor
+
+    Si en un cursos explicito usamos %ROWCOUNT nos va a devolver el numero de registro en el que esta el cursor, no la cantidad
+
+========Hacer que el cursor recorra varias tablas y obtenga mas de un campo=====
+
+1) CURSOR nombreCursor IS SELECT tablas_que_queremos_acceder,  tablas_que_queremos_acceder2, FROM tabla1 INNER JOIN tabla2 ON campo1=campo2 //Repasar InnerJoin
+2) FETCH Cursor INTO tablas_que_queremos_acceder,tablas_que_queremos_acceder2 ; 
+
+#Nota:
+    Hay una forma de solo hacer con una variable todas las consultas, chequear video.
+
+
+
+
+
+
