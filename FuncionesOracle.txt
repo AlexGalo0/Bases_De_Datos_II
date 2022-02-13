@@ -1,0 +1,17 @@
+Existen ciertas funciones incorporadas con Oracle.
+
+Timestamp almacena fecha y hora.
+
+TO_DATE(): Recibe 2 parametros, primero recibe la fecha que quiero asignar y la segundo como la interpreto
+FECHA:=TO_DATE('2018-05-28','YYYY-MM-D') ; 
+
+El video en si es los distintos tipos en los que podemos usar las fechas.
+
+
+============USER==========
+Para saber con que usuario nos estamos conectando solo debemos imprimir "USER"
+
+========
+OBTENER SUBSTRING
+
+

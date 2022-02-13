@@ -1,0 +1,15 @@
+declare
+
+begin
+INSERT INTO BRANDS VALUES(10,'BACINI') ; 
+COMMIT ; 
+INSERT INTO BRANDS VALUES(11,'MINI SHOPPER') ; 
+COMMIT ; 
+SAVEPOINT DATOS_MODIFICADOS ; 
+INSERT INTO BRANDS VALUES(12,'MULTI BICI') ; 
+
+/*NO VA A FUNCIONAR, INCOMPLETO, solo para ver como funciona el rollback*/
+rollback to savepoint DATOS_MODIFICADOS;
+
+
+end ; 

@@ -1,0 +1,17 @@
+Capturar un error, mediante el uso de un bloque extra.
+
+Se inicializa con la palabra EXCEPTION
+    EXCEPTION 
+        WHEN NOMBRE_EXCEPCION THEN 
+            lo que quiero hacer 
+
+
+
+Con las EXCEPTION, tengo 2 variables  
+    1)Codigo del error: SQLCODE
+    2)Mensaje del Error.: SQLERRM
+
+Cuando no se que error :
+    WHEN OTHERS 
+        
+

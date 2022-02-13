@@ -1,0 +1,32 @@
+Transaccion : Constituye un conjunto de operaciones sql que hacemos sobre la base de datos, modifican los datos,
+             se puede realizar sobre una tabla o muchas, afectar una o muchas, si termina de forma exitosa, 
+            se tiene que almacenar permanente , sino, se elimina todo. 
+
+    Una transaccion que se realiza de manera exitosa se debe confirmar con un comando
+        "Commit"
+    Una transaccion que se realiza de manera fallida se debe deshacer los cambios con un comando
+        "ROLLBACK"
+
+
+     Aprobar Cambios :  COMMIT ;    
+Si hay un commit y antes de eso una instruccion que tiene un error, el commit no se ejecuta.
+
+
+las instrucciones que si funciones de manera correcta pero no se les pueda hacer un commit por un error 
+quedaran en memoria para el usuario que hizo la consulta.
+
+Si quisiera eliminar las instrucciones que si se completaron (o sea , se completaron 2 de 3), para eliminar las 2, hago un ROLLBACK
+
+Si quisiera eliminar unicamente la instruccion que no se completo, entonces, hago un commit por cada instruccion que quiera.
+
+Recordar que el Update es para modificar datos que ya estan en la BDD.
+
+Hago modificaciones exitosas e inmediatamente quiero hacer un punto de guardado para la BDD
+    Si se produce un error, volveremos a este punto
+    SAVEPOINT NOMBRE_SAVEPOINT 
+
+Si quieo , puedo tener varios savepoint, ahi , ceraria uno nuevo cada vez que quisiera, o , podria simplemente ir 
+ajustando el que ya tengo , solo le pongo el mismo nombre
+
+Cuando usamos el ROLLBACK, debemos decirle a que punto en especfico queremos volver
+ROLLBACK TO SAVEPOINT NOMBRE_SAVEPOINT
