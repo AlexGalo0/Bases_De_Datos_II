@@ -1,0 +1,19 @@
+Es un elemento en el que guardaremos valores, Se compone  de  dos columnas
+    1) Un indice, donde tenemos un valor 
+    2) El valor que queremos almacenar. 
+
+    Para agregar datos es
+    Arreglo(indice) : = "Valor" 
+
+Prior : 
+    Sirve para retornar el indice anterior al cual nosotros le indicamos
+        ARREGLO.PRIOR()
+    
+Next: 
+    Lo mismo pero al reves
+    ARREGLO.NEXT()
+
+Delete
+    ARREGLO.DELETE()
+    
+    

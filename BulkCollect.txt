@@ -1,0 +1,32 @@
+Se creara una estructura de tipo Record  (O sea, un registro).
+
+TYPE nombre_Estructura IS RECORD (
+    CamposQueRetornamosEnLaConsulta.
+) ; 
+
+    Recordar: Debemos utilizar los campos en el mismo orden que los colocamos en el TYPE
+
+
+=================
+¿Que es Bulk Collect? 
+Cuando queremos que la consulta obtenga los registros de una sola vez.
+
+DECLARE
+TYPE FILA IS RECORD(
+  CODIGO_CATEGORIA CATEGORIES.CATEGORY_ID%TYPE,
+  NOMBRE_CATEGORIA CATEGORIES.CATEGORY_NAME%TYPE
+
+);
+
+
+TYPE TABLA_CATEGORIAS IS TABLE OF FILA index by pls_integer( 
+    tendra varios registros de Tipo FILA
+    y a su vez, el INDEX BY pls_integer es que a cada registro le asignaremos un indice.
+
+  
+) ; 
+
+
+¿Donde creo el Bulk Collect ?
+SELECT CATEGORIES.CATEGORY_ID , CATEGORIES.CATEGORY_NAME BULK COLLECT INTO DATOS_CATEGORIA FROM CATEGORIES ; 
+
