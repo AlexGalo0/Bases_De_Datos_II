@@ -1,3 +1,4 @@
+0) Nos logueamos con SYSTEM
 1) Se crea un Rol, el cual contiene varios privilegios.
 2) Asignar ese rol a un usuario.
 

@@ -1,0 +1,18 @@
+Una secuencia es un objeto que creamos para poder utilizar valores secuencial, para valores autoincrementables.
+
+
+Utilizar esa secuencia como llave primaria.
+
+====================================
+CREATE SEQUENCE SQ_NOMBRE START WITH N INCREMENT BY 1 ; 
+
+1)Create SeQuence SQ_NOMBRE : Lo usamos para crear la variable SeQuence , por costumbre creamos el SQ 
+2) START WITH N : Le asignamos el valor con el que va a empezxar a contar, debe ser mayor a la cantidad de registros que tengamos
+3)Valor de Incremento
+
+Se puede ver en la carpeta sequences
+
+
+Forma de usarlas 
+1) NextVal : Obtyener siguiente valor 
+2) CurrVal : Obtener valor en el que se encuentra, solo utilizar si ya usamos NextVal por sesión.
