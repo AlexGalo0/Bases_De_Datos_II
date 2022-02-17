@@ -1,0 +1,1 @@
+/* Un solo trigger para todas las operaciones*/

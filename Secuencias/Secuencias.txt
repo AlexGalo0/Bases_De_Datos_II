@@ -1,4 +1,4 @@
-Una secuencia es un objeto que creamos para poder utilizar valores secuencial, para valores autoincrementables.
+asUna secuencia es un objeto que creamos para poder utilizar valores secuencial, para valores autoincrementables.
 
 
 Utilizar esa secuencia como llave primaria.

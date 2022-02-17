@@ -1,0 +1,39 @@
+Triggers : 
+Disparador automatico que se asocia a la BDD, es un procedimiento almacenado
+Se ejecutara de forma automatica antes o despues un insert/update/delete 
+Se utilizaran 2 variables
+    1) New : Todos menos Delete, me mostrara la nueva variable agregada
+    2) Old: Todas menos Insert , me mostrara la vieja variable que se eliminaron
+
+
+===========
+CREATE OR REPLACE TRIGGER TG_SQ_TABLA_CATEGORIA :Si el trigger existe, reemplaza. 
+BEFORE INSERT ON CATEGORIES   :Siempre hay que definir cuando se ejecutara, before o after, se hara before al insert
+FOR EACH ROW : SSi la operacion insert agrega 10 registros, se ejecutara el trigger 10 veces .
+
+
+¿Como usar las variables de los trigger?
+    :NEW.CAMPO_NUEVO:=SQ_TABLA_CATEGORIAS.NEXTVAL;               :de que campo quiero asignar el valor nuevo
+
+El trigger requiere que se habilite su uso por parte del System.
+Deberia de salir en la carpeta de Triggers
+
+Se debe comprobar mediante el uso de un INSERT (La instruccion que especificamos en el BEFORE INSERT CATEGORIES)
+
+Para borrar espacios de la cadena usamos la funcion TRIM()
+
+Para aprobar los cambios debo hacerlo todo en n bloque anonimo
+
+El rollback no tiene efectos en secuencias.
+
+
+=========================UN TRIGGER PARA TODAS LAS OPERACIONES============
+AFTER INSERT OR UPDATE OR DELETE ON ___ : Para decirle que cualquiera de las 3
+
+¿Pero como verificar cual operacion es?
+IF (INSERTING) : Para el Insert
+If (UPDATING): Para el Update 
+If (Deleting) : Para el Delete
+
+=== Para saber el valor viejo de una secuencia(creo que seria secuencia) es 
+    OLD.NOMBRE_DE_CAMPO
